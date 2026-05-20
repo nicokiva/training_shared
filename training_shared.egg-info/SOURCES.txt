@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+training_shared/__init__.py
+training_shared/events.py
+training_shared.egg-info/PKG-INFO
+training_shared.egg-info/SOURCES.txt
+training_shared.egg-info/dependency_links.txt
+training_shared.egg-info/top_level.txt
