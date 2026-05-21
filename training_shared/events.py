@@ -20,6 +20,11 @@ class EventType(str, Enum):
     Inheriting from str means each value IS a string, so you can pass
     EventType.RUN_GLOBAL directly wherever a str is expected (e.g. SQLite INSERT).
     """
+    # Semantic event: emitted by pdf2xls-generator after a full upload cycle.
+    # routine-analyzer reacts by running monthly + global + new-routine automatically.
+    ROUTINE_UPLOADED = "routine:uploaded"
+
+    # Manual modes: used when running analyze.py directly from the CLI (--mode flag).
     RUN_GLOBAL      = "run:global"
     RUN_MONTHLY     = "run:monthly"
     RUN_NEW_ROUTINE = "run:new-routine"
